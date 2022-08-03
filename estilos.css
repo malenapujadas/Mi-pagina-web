@@ -99,7 +99,14 @@ section h1{
     padding: 20px;
     grid-gap: 20px;
 }
-
+.imagen{
+    border-radius: 2px;
+    transition: all 0.7s;
+}
+.imagen:hover{
+    filter: grayscale(100%);
+    transform: scale(1.05);
+}
 .imagen1{
     background-image: url(multimedia/Imagen\ 1.jpg);
     background-position: center;
