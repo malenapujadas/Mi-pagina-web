@@ -11,29 +11,24 @@ header{
     height: 50px;
     background-color: white;
 }
-.barra{
-    text-align: right;  
-}
-.barra ul li{
-    list-style: none;
-    display: inline-block;
-    margin-top: 20px;
-}
-.barra a{
+.nav-link{
     text-decoration: none;
     color: rgb(8, 18, 1);
     font-size: 16px;
     margin-left: 15px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-variant: small-caps;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
 }
-.barra a:hover{
+.nav-link:hover{
     color: rgb(202, 200, 200);
 }
 .inicio{
     height: 100vh;
     width: 100vw;
-    background-image: url(multimedia/Imagen_6\ -\ Foto.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion5.jpg);
     background-size: cover;
     background-size: center;
     margin-left: 50px;
@@ -94,8 +89,8 @@ section h1{
     height: 600px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
     padding: 20px;
     grid-gap: 20px;
 }
@@ -108,59 +103,94 @@ section h1{
     transform: scale(1.05);
 }
 .imagen1{
-    background-image: url(multimedia/Imagen\ 1.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion1.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen2{
-    background-image: url(multimedia/Imagen\ 2.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion2.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen3{
-    background-image: url(multimedia/Imagen\ 4.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion3.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen4{
-    background-image: url(multimedia/Imagen_5.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion4.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen5{
-    background-image: url(multimedia/Imagen_6\ -\ Foto.jpg);
+    background-image: url(multimedia/concurso\ de\ expansion5.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen6{
-    background-image: url(multimedia/Imagen_7\ -\ Foto\ \(1\).jpg);
+    background-image: url(multimedia/concurso\ de\ expansion6.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen7{
-    background-image: url(multimedia/Pujadas\ Valentina\ _06.jpg);
+    background-image: url(multimedia/memorial\ covid1.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen8{
-    background-image: url(multimedia/RENDER\ VISTA.jpg);
+    background-image: url(multimedia/memorial\ covid2.jpg);
     background-position: center;
     background-size: cover;
 }
 .imagen9{
+    background-image: url(multimedia/memorial\ covid3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen10{
+    background-image: url(multimedia/proyecto\ universitario1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen11{
+    background-image: url(multimedia/proyecto\ universitario2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen12{
+    background-image: url(multimedia/proyecto\ universitario3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen13{
+    background-image: url(multimedia/proyecto\ universitario4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen14{
+    background-image: url(multimedia/Pujadas\ Valentina\ _06.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen15{
+    background-image: url(multimedia/RENDER\ VISTA.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.imagen16{
     background-image: url(multimedia/RENDER_1\ -\ Photo\ \(1\).jpg);
     background-position: center;
     background-size: cover;
 }
-#renders{
+.renders{
     display: flex;
     justify-content: space-between;
 }
-#esquemas{
+.esquemas{
     display: flex;
     justify-content: space-between;
 }
-#planos{
+.planos{
     display: flex;
     justify-content: space-between;
 }
@@ -174,8 +204,14 @@ section h1{
     width: 50%;
     height: 300px;
 }
-.contacto article{
-    background-color: rgb(158, 236, 155);
+.contacto h2{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    padding: 10px;
+}
+.contacto{
+    background-color: rgba(169, 175, 175, 0.447);
 }
 form{
     text-align: center;
@@ -188,7 +224,18 @@ footer{
     line-height: 30px;
 }
 .redes :hover{
-    color: rgb(115, 195, 35);
+    color: rgb(201, 201, 182);
+}
+.redes a i{
+    text-decoration: none;
+    color: black;
+}
+.btn{
+    background-color: white;
+    color: black;
+}
+.btn :hover{
+    color:  rgb(201, 201, 182);
 }
 
 @media only screen and (max-width:360px) {
@@ -209,7 +256,7 @@ footer{
     }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(9, 400px);
+        grid-template-rows: repeat(16, 400px);
     }
     .imagen{
         background-position: center;
