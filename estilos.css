@@ -29,26 +29,13 @@ header {
 
 .inicio {
   height: 100vh;
-  width: 100vw;
+  /* width: 100%; */
   background-image: url(multimedia/concurso\ de\ expansion5.jpg);
   background-size: cover;
   background-size: center;
   margin-left: 50px;
   margin-bottom: 50px;
   margin-right: 50px;
-}
-
-.navbar-brand {
-  display: none;
-  float: right;
-  font-size: 30px;
-  color: rgb(8, 18, 1);
-  padding: 10px;
-  text-decoration: none;
-}
-
-.navbar-brand:hover {
-  color: rgb(202, 200, 200);
 }
 
 .call {
@@ -211,31 +198,13 @@ section h1 {
   background-size: cover;
 }
 
-.renders {
-  display: flex;
-  justify-content: space-between;
-}
-
-.esquemas {
-  display: flex;
-  justify-content: space-between;
-}
-
-.planos {
-  display: flex;
-  justify-content: space-between;
-}
-
-.img {
-  background-color: seagreen;
-  width: 50%;
-  height: 300px;
-}
-
-.info {
-  border: solid 2px black;
-  width: 50%;
-  height: 300px;
+.cv {
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 .contacto h2 {
@@ -306,4 +275,6 @@ footer {
   .navbar-brand {
     display: flex;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */

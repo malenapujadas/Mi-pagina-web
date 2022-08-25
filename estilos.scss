@@ -12,7 +12,7 @@ $color2:white;
 header{
     width: 100%;
     height: 50px;
-    background-color: white;
+    background-color: $color2;
 }
 .nav-link{
     text-decoration: none;
@@ -30,7 +30,7 @@ header{
 }
 .inicio{
     height: 100vh;
-    width: 100vw;
+   /* width: 100%; */
     background-image: url(multimedia/concurso\ de\ expansion5.jpg);
     background-size: cover;
     background-size: center;
@@ -38,17 +38,7 @@ header{
     margin-bottom: 50px;
     margin-right: 50px;
 }
-.navbar-brand{
-    display: none;
-    float: right;
-    font-size: 30px;
-    color: $color1;
-    padding: 10px;
-    text-decoration: none;
-}
-.navbar-brand:hover{
-    color: rgb(202, 200, 200);
-}
+
 .call{
     text-align: center;
     color: $color2;
@@ -185,27 +175,15 @@ section h1{
     background-position: center;
     background-size: cover;
 }
-.renders{
-    display: flex;
-    justify-content: space-between;
-}
-.esquemas{
-    display: flex;
-    justify-content: space-between;
-}
-.planos{
-    display: flex;
-    justify-content: space-between;
-}
-.img{
-    background-color: seagreen;
-    width: 50%;
-    height: 300px;
-}
-.info{
-    border: solid 2px black;
-    width: 50%;
-    height: 300px;
+
+
+.cv{
+    height: 600px;
+    width: 100%;
+    background-color: black;
+    background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .contacto h2{
     text-align: center;
