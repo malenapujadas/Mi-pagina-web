@@ -16,6 +16,9 @@ $color2:white;
 header{
     @include sizes (100%, 50px, $color2);
 }
+.navbar-toggler{
+    border: none;
+}
 .nav-link{
     text-decoration: none;
     color: $color1;
@@ -177,7 +180,7 @@ section h1{
 }
 
 .cv{
-    height: 600px;
+    height: 300px;
     width: 100%;
     background-color: black;
     background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);
@@ -225,6 +228,9 @@ footer{
         background-position: center;
         background-size: cover;
     }
+    nav{
+        background-color: white;
+    }
     h1{
         font-size: 30px;
     }
@@ -233,6 +239,9 @@ footer{
     }  
     .barra{
         display: none;
+    }
+    .infoSobreMi{
+        padding: 10px;
     }
     .galeria {
         grid-template-columns: repeat(1, 1fr);
@@ -244,5 +253,18 @@ footer{
     }
     .navbar-brand{
         display: flex;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:1000px) {
+    .galeria {
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(8, 400px);
+    }
+    .imagen{
+        background-position: center;
+        background-size: cover;
+    }
+    nav{
+        background-color: white;
     }
 }
