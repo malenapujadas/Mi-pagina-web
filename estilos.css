@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2? family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap");
+@import url("https://fonts.googleapis.com/css2? familia= Exo:peso@100;300 &family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +9,6 @@
 header {
   height: 50px;
   width: 100%;
-  background-color: white;
 }
 
 .navbar-toggler {
@@ -17,10 +17,10 @@ header {
 
 .nav-link {
   text-decoration: none;
-  color: rgb(8, 18, 1);
+  color: white;
   font-size: 16px;
   margin-left: 15px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Exo", sans-serif;
   font-variant: small-caps;
   text-align: center;
   list-style: none;
@@ -28,25 +28,23 @@ header {
 }
 
 .nav-link:hover {
-  color: rgb(202, 200, 200);
+  color: rgb(115, 115, 115);
 }
 
 .inicio {
   height: 100vh;
-  /* width: 100%; */
-  background-image: url(multimedia/concurso\ de\ expansion5.jpg);
+  width: 100%;
+  background-image: url(multimedia/IMAGEN\ 2.jpg);
   background-size: cover;
   background-size: center;
-  margin-left: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
 }
 
 .call {
   text-align: center;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin-top: 150px;
+  font-variant: small-caps;
+  font-family: "Exo", sans-serif;
+  margin-top: 50px;
 }
 
 h1 {
@@ -55,15 +53,22 @@ h1 {
 }
 
 .call h2 {
-  font-size: 25px;
+  font-size: 16px;
   margin-left: 15px;
+}
+
+.fondo {
+  background-color: rgb(36, 36, 36);
+  height: 100%;
+  width: 100%;
 }
 
 section h1 {
   text-align: center;
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-variant: small-caps;
   font-size: 20px;
-  color: rgb(40, 39, 39);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   padding-top: 70px;
 }
 
@@ -72,25 +77,37 @@ section h1 {
   padding-top: 50px;
   padding-left: 150px;
   padding-right: 150px;
+  color: white;
+  font-family: "Exo", sans-serif;
 }
 
-.portafolio {
-  height: 50px;
-  width: 100%;
-  background-color: white;
+.link {
   text-align: center;
-  font-size: 20px;
-  padding-top: 20px;
-  color: rgb(40, 39, 39);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  list-style: none;
+  font-variant: small-caps;
 }
 
+.link:hover {
+  color: rgb(115, 115, 115);
+}
+
+/* .portafolio{
+    @include sizes (100%, 50px, $color2);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(40, 39, 39);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
 .galeria {
   height: 600px;
   width: 100%;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 2fr);
   grid-template-rows: repeat(4, 400px);
   padding: 20px;
   grid-gap: 20px;
@@ -130,80 +147,68 @@ section h1 {
   background-size: cover;
 }
 
-.imagen5 {
-  background-image: url(multimedia/concurso\ de\ expansion5.jpg);
-  background-position: center;
-  background-size: cover;
+/* .imagen5{
+    background-image: url(multimedia/concurso\ de\ expansion5.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen6 {
-  background-image: url(multimedia/concurso\ de\ expansion6.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen6{
+    background-image: url(multimedia/concurso\ de\ expansion6.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen7 {
-  background-image: url(multimedia/memorial\ covid1.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen7{
+    background-image: url(multimedia/memorial\ covid1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen8 {
-  background-image: url(multimedia/memorial\ covid2.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen8{
+    background-image: url(multimedia/memorial\ covid2.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen9 {
-  background-image: url(multimedia/memorial\ covid3.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen9{
+    background-image: url(multimedia/memorial\ covid3.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen10 {
-  background-image: url(multimedia/proyecto\ universitario1.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen10{
+    background-image: url(multimedia/proyecto\ universitario1.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen11 {
-  background-image: url(multimedia/proyecto\ universitario2.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen11{
+    background-image: url(multimedia/proyecto\ universitario2.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen12 {
-  background-image: url(multimedia/proyecto\ universitario3.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen12{
+    background-image: url(multimedia/proyecto\ universitario3.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen13 {
-  background-image: url(multimedia/proyecto\ universitario4.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen13{
+    background-image: url(multimedia/proyecto\ universitario4.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen14 {
-  background-image: url(multimedia/Pujadas\ Valentina\ _06.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen14{
+    background-image: url(multimedia/Pujadas\ Valentina\ _06.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen15 {
-  background-image: url(multimedia/RENDER\ VISTA.jpg);
-  background-position: center;
-  background-size: cover;
+.imagen15{
+    background-image: url(multimedia/RENDER\ VISTA.jpg);
+    background-position: center;
+    background-size: cover;
 }
-
-.imagen16 {
-  background-image: url(multimedia/RENDER_1\ -\ Photo\ \(1\).jpg);
-  background-position: center;
-  background-size: cover;
-}
-
+.imagen16{
+    background-image: url(multimedia/RENDER_1\ -\ Photo\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+} */
 .cv {
-  height: 300px;
+  height: 600px;
   width: 100%;
   background-color: black;
   background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);

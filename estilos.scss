@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap');
+@import url('https://fonts.googleapis.com/css2? familia= Exo:peso@100;300 &family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap');
 
 $color1:rgb(8, 18, 1);
 $color2:white;
@@ -14,78 +15,93 @@ $color2:white;
     background-color: $bcolor;
 }
 header{
-    @include sizes (100%, 50px, $color2);
+    height: 50px;
+    width: 100%;
 }
 .navbar-toggler{
     border: none;
 }
 .nav-link{
     text-decoration: none;
-    color: $color1;
+    color: $color2;
     font-size: 16px;
     margin-left: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Exo', sans-serif;
     font-variant: small-caps;
     text-align: center;
     list-style: none;
     display: inline-block;
 }
 .nav-link:hover{
-    color: rgb(202, 200, 200);
+    color: rgb(115, 115, 115);
 }
 .inicio{
     height: 100vh;
-   /* width: 100%; */
-    background-image: url(multimedia/concurso\ de\ expansion5.jpg);
+    width: 100%;
+    background-image: url(multimedia/IMAGEN\ 2.jpg);
     background-size: cover;
     background-size: center;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    margin-right: 50px;
 }
 
 .call{
     text-align: center;
     color: $color2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 150px;
+    font-variant: small-caps;
+    font-family: 'Exo', sans-serif;
+    margin-top: 50px;
 }
 h1{
     font-size: 70px;
     margin-left: 15px;
 }
 .call h2{
-    font-size: 25px;
+    font-size: 16px;
     margin-left: 15px;
+}
+.fondo{
+    background-color: rgb(36, 36, 36);
+    height: 100%;
+    width: 100%;
 }
 section h1{
     text-align: center;
+    color: $color2;
+    font-family: 'Exo', sans-serif;
+    font-variant: small-caps;
     font-size: 20px;
-    color: rgb(40, 39, 39);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 70px;
 }
-
-
-
 .infoSobreMi{
     text-align: center;
     padding-top: 50px;
     padding-left: 150px;
     padding-right: 150px;
+    color: $color2;
+    font-family: 'Exo', sans-serif;
 }
-.portafolio{
+.link{
+    text-align: center;
+    text-decoration: none;
+    color: $color2;
+    font-size: 16px;
+    list-style: none;
+    font-variant: small-caps;
+}
+.link:hover{
+    color:rgb(115, 115, 115); 
+}
+/* .portafolio{
     @include sizes (100%, 50px, $color2);
     text-align: center;
     font-size: 20px;
     padding-top: 20px;
     color: rgb(40, 39, 39);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+} */
 .galeria{
     @include sizes (100%, 600px, $color2);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-template-rows: repeat(4, 400px);
     padding: 20px;
     grid-gap: 20px;
@@ -118,7 +134,7 @@ section h1{
     background-position: center;
     background-size: cover;
 }
-.imagen5{
+/* .imagen5{
     background-image: url(multimedia/concurso\ de\ expansion5.jpg);
     background-position: center;
     background-size: cover;
@@ -177,10 +193,10 @@ section h1{
     background-image: url(multimedia/RENDER_1\ -\ Photo\ \(1\).jpg);
     background-position: center;
     background-size: cover;
-}
+} */
 
 .cv{
-    height: 300px;
+    height: 600px;
     width: 100%;
     background-color: black;
     background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);
