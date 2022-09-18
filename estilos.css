@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap");
+/* @import url('https://fonts.googleapis.com/css2? family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap'); */
 @import url("https://fonts.googleapis.com/css2? familia= Exo:peso@100;300 &family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap");
 * {
   margin: 0;
@@ -108,7 +108,7 @@ section h1 {
   background-color: white;
   display: grid;
   grid-template-columns: repeat(1, 2fr);
-  grid-template-rows: repeat(4, 400px);
+  grid-template-rows: repeat(4, 600px);
   padding: 20px;
   grid-gap: 20px;
 }
@@ -124,96 +124,50 @@ section h1 {
 }
 
 .imagen1 {
-  background-image: url(multimedia/concurso\ de\ expansion1.jpg);
+  background-image: url(multimedia/foto\ portada\ 1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .imagen2 {
-  background-image: url(multimedia/concurso\ de\ expansion2.jpg);
+  background-image: url(multimedia/foto\ portada2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .imagen3 {
-  background-image: url(multimedia/concurso\ de\ expansion3.jpg);
+  background-image: url(multimedia/foto\ portada3.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .imagen4 {
-  background-image: url(multimedia/concurso\ de\ expansion4.jpg);
+  background-image: url(multimedia/foto\ portada\ 4.jpg);
   background-position: center;
   background-size: cover;
 }
 
-/* .imagen5{
-    background-image: url(multimedia/concurso\ de\ expansion5.jpg);
-    background-position: center;
-    background-size: cover;
+.proyecto {
+  background-color: rgb(36, 36, 36);
+  display: inline-block;
 }
-.imagen6{
-    background-image: url(multimedia/concurso\ de\ expansion6.jpg);
-    background-position: center;
-    background-size: cover;
+
+.imgProyecto {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  padding-top: 100px;
 }
-.imagen7{
-    background-image: url(multimedia/memorial\ covid1.jpg);
-    background-position: center;
-    background-size: cover;
+
+.infoProyecto {
+  height: 100%;
+  width: 50%;
+  float: right;
+  color: white;
 }
-.imagen8{
-    background-image: url(multimedia/memorial\ covid2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen9{
-    background-image: url(multimedia/memorial\ covid3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen10{
-    background-image: url(multimedia/proyecto\ universitario1.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen11{
-    background-image: url(multimedia/proyecto\ universitario2.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen12{
-    background-image: url(multimedia/proyecto\ universitario3.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen13{
-    background-image: url(multimedia/proyecto\ universitario4.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen14{
-    background-image: url(multimedia/Pujadas\ Valentina\ _06.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen15{
-    background-image: url(multimedia/RENDER\ VISTA.jpg);
-    background-position: center;
-    background-size: cover;
-}
-.imagen16{
-    background-image: url(multimedia/RENDER_1\ -\ Photo\ \(1\).jpg);
-    background-position: center;
-    background-size: cover;
-} */
-.cv {
-  height: 600px;
-  width: 100%;
-  background-color: black;
-  background-image: url(./multimedia/Curriculum-Vitae-Valentina-Pujadas.jpg);
-  background-position: center;
-  background-size: cover;
+
+.habilidades {
+  display: inline;
 }
 
 .contacto h2 {
@@ -233,19 +187,39 @@ form {
 }
 
 footer {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(36, 36, 36);
   text-align: center;
-  height: 30px;
+  height: 200px;
   line-height: 30px;
 }
 
 .redes :hover {
-  color: rgb(201, 201, 182);
+  color: rgb(115, 115, 115);
 }
 
 .redes a i {
   text-decoration: none;
   color: rgb(8, 18, 1);
+  float: right;
+  color: white;
+  font-size: 30px;
+  padding-right: 200px;
+}
+
+.mapa {
+  float: left;
+  padding: 20px;
+  padding-left: 200px;
+}
+
+.mapa ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.mapa ul li a:hover {
+  color: rgb(115, 115, 115);
 }
 
 .btn {
