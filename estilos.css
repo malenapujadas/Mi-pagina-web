@@ -89,6 +89,7 @@ section h1 {
   padding-right: 150px;
   color: white;
   font-family: "Exo", sans-serif;
+  font-variant: small-caps;
 }
 .main .link {
   text-decoration: none;
@@ -166,6 +167,8 @@ section h1 {
 }
 
 .card {
+  font-family: "Exo", sans-serif;
+  font-variant: small-caps;
   border-radius: 2px;
   background-color: rgb(115, 115, 115);
   color: white;

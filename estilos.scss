@@ -101,6 +101,7 @@ section h1 {
         padding-right: 150px;
         color: $color2;
         font-family: 'Exo', sans-serif;
+        font-variant: small-caps;
     }
 
     .link {
@@ -182,6 +183,8 @@ section h1 {
 }
 
 .card {
+    font-family: 'Exo', sans-serif;
+    font-variant: small-caps;
     border-radius: 2px;
     background-color: $color4;
     color: $color2;
