@@ -80,26 +80,25 @@ section h1 {
   width: 100%;
 }
 
-.infoSobreMi {
+.main {
   text-align: center;
+}
+.main .infoSobreMi {
   padding-top: 50px;
   padding-left: 150px;
   padding-right: 150px;
   color: white;
   font-family: "Exo", sans-serif;
 }
-
-.link {
-  text-align: center;
+.main .link {
   text-decoration: none;
   color: white;
   font-size: 16px;
   list-style: none;
   font-variant: small-caps;
 }
-
-.link:hover {
-  color: rgb(115, 115, 115);
+.main .link:hover {
+  color: rgb(0, 0, 0);
 }
 
 .galeria {
@@ -128,7 +127,8 @@ section h1 {
 }
 
 .proyecto {
-  background-color: rgb(36, 36, 36);
+  background-color: rgb(0, 0, 0);
+  height: 800px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -137,15 +137,20 @@ section h1 {
   height: 100%;
   width: 50%;
   padding: 20px;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .infoProyecto {
   text-align: center;
+  font-family: "Exo", sans-serif;
+  font-variant: small-caps;
   height: 100%;
   width: 50%;
-  padding-top: 100px;
+  padding-top: 300px;
   color: white;
+}
+.infoProyecto h1 {
+  font-size: 30px;
 }
 
 .servicios {
@@ -276,7 +281,7 @@ iframe {
   border: 1px solid white;
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 359px) {
   .inicio {
     margin: 0;
     width: 100vw;
@@ -284,7 +289,11 @@ iframe {
     background-size: cover;
   }
   nav {
-    background-color: white;
+    background-color: rgb(36, 36, 36);
+    z-index: 999;
+  }
+  nav .nav-link {
+    color: white;
   }
   h1 {
     font-size: 30px;
@@ -296,32 +305,81 @@ iframe {
     display: none;
   }
   .infoSobreMi {
-    padding: 10px;
+    padding: 0px;
   }
   .galeria {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(16, 400px);
+    grid-template-rows: repeat(4, 700px);
+    grid-gap: 20px;
   }
   .imagen {
+    height: 700px;
+    width: 100%;
+  }
+  .imagen .imagen1 {
+    background-position: center;
+    background-size: cover;
+  }
+  .imagen .imagen2 {
+    background-position: center;
+    background-size: cover;
+  }
+  .imagen .imagen3 {
+    background-position: center;
+    background-size: cover;
+  }
+  .imagen .imagen4 {
     background-position: center;
     background-size: cover;
   }
   .navbar-brand {
     display: flex;
   }
-}
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
-  .galeria {
-    grid-template-columns: repeat(2, 2fr);
-    grid-template-rows: repeat(8, 400px);
+  .infoProyecto {
+    width: 100%;
+    height: 400px;
+    padding: 10px;
   }
-  .imagen {
+  .imgProyecto {
+    height: 400px;
+    width: 100%;
+    padding-top: 100px;
+  }
+  .footer {
+    display: inline-block;
+    padding: 0px;
+  }
+  .redes a i {
+    color: white;
+    font-size: 20px;
+  }
+  .servicios {
     background-position: center;
     background-size: cover;
-  }
-  nav {
-    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 200px);
+    padding: 20px;
+    grid-gap: 20px;
   }
 }
+/* @media only screen and (min-width:600px) and (max-width:1000px) {
+    .galeria {
+        grid-template-columns: repeat(1, 2fr);
+        grid-template-rows: repeat(4, 600px);
+        grid-gap: 20px;
+    }
+    .imagen{
+        background-position: center;
+        background-size: cover;
+    }
+    nav{
+        background-color:$color3;
+        .nav-link{
+            color: $color2;
+        }
+
+    }
+} */
 
 /*# sourceMappingURL=estilos.css.map */
