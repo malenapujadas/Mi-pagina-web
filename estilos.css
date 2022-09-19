@@ -281,7 +281,7 @@ iframe {
   border: 1px solid white;
 }
 
-@media only screen and (min-width: 359px) {
+@media only screen and (min-width: 359px) and (max-width: 1000px) {
   .inicio {
     margin: 0;
     width: 100vw;
