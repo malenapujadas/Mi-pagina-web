@@ -304,8 +304,11 @@ iframe {
   .barra {
     display: none;
   }
-  .infoSobreMi {
-    padding: 0px;
+  .main .infoSobreMi {
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px;
   }
   .galeria {
     grid-template-columns: repeat(1, 1fr);
@@ -361,25 +364,11 @@ iframe {
     grid-template-rows: repeat(6, 200px);
     padding: 20px;
     grid-gap: 20px;
+    padding-left: 35px;
+  }
+  .footer {
+    padding-left: 35px;
   }
 }
-/* @media only screen and (min-width:600px) and (max-width:1000px) {
-    .galeria {
-        grid-template-columns: repeat(1, 2fr);
-        grid-template-rows: repeat(4, 600px);
-        grid-gap: 20px;
-    }
-    .imagen{
-        background-position: center;
-        background-size: cover;
-    }
-    nav{
-        background-color:$color3;
-        .nav-link{
-            color: $color2;
-        }
-
-    }
-} */
 
 /*# sourceMappingURL=estilos.css.map */

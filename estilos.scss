@@ -1,28 +1,32 @@
 @import url('https://fonts.googleapis.com/css2? familia= Exo:peso@100;300 &family= Gentium+Book+Plus & family= Lato:wght@100 & display=swap');
 
-$color1:rgb(0, 0, 0);
-$color2:white;
-$color3:rgb(36, 36, 36);
-$color4:rgb(115, 115, 115);
+$color1: rgb(0, 0, 0);
+$color2: white;
+$color3: rgb(36, 36, 36);
+$color4: rgb(115, 115, 115);
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-@mixin sizes ($width, $height, $bcolor){
+
+@mixin sizes ($width, $height, $bcolor) {
     height: $height;
     width: $width;
     background-color: $bcolor;
 }
-header{
+
+header {
     height: 50px;
     width: 100%;
 }
-.navbar-toggler{
+
+.navbar-toggler {
     border: none;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     color: $color2;
     font-size: 16px;
@@ -33,10 +37,12 @@ header{
     list-style: none;
     display: inline-block;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: $color4;
 }
-.inicio{
+
+.inicio {
     height: 100vh;
     width: 100%;
     background-image: url(multimedia/IMAGEN2.jpg);
@@ -44,27 +50,31 @@ header{
     background-size: center;
 }
 
-.call{
+.call {
     text-align: center;
     color: $color2;
     font-variant: small-caps;
     font-family: 'Exo', sans-serif;
     margin-top: 50px;
 }
-h1{
+
+h1 {
     font-size: 70px;
     margin-left: 15px;
 }
-.call h2{
+
+.call h2 {
     font-size: 16px;
     margin-left: 15px;
 }
-.fondo{
-    background-color:$color3;
+
+.fondo {
+    background-color: $color3;
     height: 100%;
     width: 100%;
 }
-section h1{
+
+section h1 {
     text-align: center;
     color: $color2;
     font-family: 'Exo', sans-serif;
@@ -72,36 +82,42 @@ section h1{
     font-size: 20px;
     padding-top: 70px;
 }
-.sobremi{
-    background-image:url(multimedia/RENDER_1-Photo.jpg);
-    opacity: 0,3;
+
+.sobremi {
+    background-image: url(multimedia/RENDER_1-Photo.jpg);
+    opacity: 0, 3;
     background-position: center;
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
-.main{
-    text-align: center;
-    .infoSobreMi{
-    padding-top: 50px;
-    padding-left: 150px;
-    padding-right: 150px;
-    color: $color2;
-    font-family: 'Exo', sans-serif;
-}
-.link{
 
-    text-decoration: none;
-    color: $color2;
-    font-size: 16px;
-    list-style: none;
-    font-variant: small-caps;
+.main {
+    text-align: center;
+
+    .infoSobreMi {
+        padding-top: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+        color: $color2;
+        font-family: 'Exo', sans-serif;
+    }
+
+    .link {
+
+        text-decoration: none;
+        color: $color2;
+        font-size: 16px;
+        list-style: none;
+        font-variant: small-caps;
+    }
+
+    .link:hover {
+        color: $color1;
+    }
 }
-.link:hover{
-    color:$color1; 
-}
-}
-.galeria{
+
+.galeria {
     @include sizes (100%, 100%, $color3);
     display: grid;
     grid-template-columns: repeat(1, 2fr);
@@ -109,7 +125,8 @@ section h1{
     padding: 20px;
     grid-gap: 20px;
 }
-.imagen{
+
+.imagen {
     border-radius: 2px;
     transition: all 0.7s;
     height: 700px;
@@ -117,24 +134,27 @@ section h1{
     background-position: center;
     background-size: cover;
 }
-.imagen:hover{
+
+.imagen:hover {
     filter: grayscale(100%);
     transform: scale(1.05);
 }
 
-.proyecto{
+.proyecto {
     background-color: $color1;
     height: 800px;
     display: flex;
     flex-wrap: wrap;
 }
-.imgProyecto{
+
+.imgProyecto {
     height: 100%;
     width: 50%;
     padding: 20px;
     padding-top: 200px;
 }
-.infoProyecto{
+
+.infoProyecto {
     text-align: center;
     font-family: 'Exo', sans-serif;
     font-variant: small-caps;
@@ -142,13 +162,14 @@ section h1{
     width: 50%;
     padding-top: 300px;
     color: $color2;
-    h1{
+
+    h1 {
         font-size: 30px;
     }
 }
 
 
-.servicios{
+.servicios {
     background-image: url(multimedia/PujadasValentina_06.jpg);
     background-position: center;
     background-size: cover;
@@ -159,13 +180,15 @@ section h1{
     padding-left: 200px;
     grid-gap: 20px;
 }
-.card{
+
+.card {
     border-radius: 2px;
     background-color: $color4;
     color: $color2;
     margin-left: 30px;
 }
-.contacto h2{
+
+.contacto h2 {
     text-align: left;
     font-family: 'Exo', sans-serif;
     font-variant: small-caps;
@@ -173,26 +196,30 @@ section h1{
     padding-top: 20px;
     color: $color2;
 }
-.contacto{
-    background-image:url(multimedia/RENDERVISTA.jpg);
+
+.contacto {
+    background-image: url(multimedia/RENDERVISTA.jpg);
     opacity: 1;
     background-position: center;
     background-size: cover;
 }
-form{
+
+form {
     text-align: left;
     padding: 20px;
     padding-left: 50px;
     color: $color2;
 }
-.contacto form input{
+
+.contacto form input {
     border-top: none;
     border-left: none;
     border-right: none;
     border-bottom: 2px solid $color2;
     background-color: $color2;
 }
-.footer{
+
+.footer {
     background-color: $color3;
     text-align: center;
     height: 250px;
@@ -200,165 +227,183 @@ form{
     display: flex;
     justify-content: space-around;
 }
-.footer h2{
+
+.footer h2 {
     font-family: 'Exo', sans-serif;
     font-variant: small-caps;
     color: $color2;
     font-size: 20px;
     padding-left: 20px;
 }
-.redes h2{
+
+.redes h2 {
     padding-top: 20px;
 }
-.redes a i:hover{
-    color:$color4;
+
+.redes a i:hover {
+    color: $color4;
 }
-.redes a i{
+
+.redes a i {
     text-decoration: none;
     color: $color2;
     font-size: 30px;
-    padding-left:20px;
+    padding-left: 20px;
     padding-top: 20px;
 }
-.mapa{
+
+.mapa {
     padding: 20px;
 }
-.mapa ul li a{
+
+.mapa ul li a {
     text-decoration: none;
     list-style: none;
     color: $color2;
     font-family: 'Exo', sans-serif;
     font-variant: small-caps;
 }
-.mapa ul li a:hover{
-    color:$color4;
+
+.mapa ul li a:hover {
+    color: $color4;
 }
-iframe{
+
+iframe {
     height: 200px;
     width: 300px;
     padding-top: 20px;
 }
-.ubicacion p{
+
+.ubicacion p {
     color: $color2;
     font-family: 'Exo', sans-serif;
     font-variant: small-caps;
 }
-#footer{
+
+#footer {
     height: 100px;
     width: 100%;
     padding: 20px;
     background-color: $color4;
-    p{
+
+    p {
         color: $color2;
         text-align: center;
     }
 }
-.btn{
+
+.btn {
     background-color: transparent;
     color: $color2;
     border: 1px solid $color2;
 }
 
 
-@media only screen and (min-width:359px) and (max-width:1000px){
-    .inicio{
+@media only screen and (min-width:359px) and (max-width:1000px) {
+    .inicio {
         margin: 0;
         width: 100vw;
         background-position: center;
         background-size: cover;
     }
-    nav{
-        background-color:$color3;
+
+    nav {
+        background-color: $color3;
         z-index: 999;
-        .nav-link{
+
+        .nav-link {
             color: $color2;
         }
-        
+
     }
-    h1{
+
+    h1 {
         font-size: 30px;
     }
-    .call h2{
+
+    .call h2 {
         font-size: 16px;
-    }  
-    .barra{
+    }
+
+    .barra {
         display: none;
     }
-    .infoSobreMi{
-        padding: 0px;
+
+    .main .infoSobreMi {
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding: 20px;
     }
+
     .galeria {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(4, 700px);
         grid-gap: 20px;
     }
-    .imagen{
+
+    .imagen {
         height: 700px;
         width: 100%;
-        .imagen1{
+
+        .imagen1 {
             background-position: center;
             background-size: cover;
         }
-        .imagen2{
+
+        .imagen2 {
             background-position: center;
             background-size: cover;
         }
-        .imagen3{
+
+        .imagen3 {
             background-position: center;
             background-size: cover;
         }
-        .imagen4{
+
+        .imagen4 {
             background-position: center;
             background-size: cover;
         }
     }
-    .navbar-brand{
+
+    .navbar-brand {
         display: flex;
     }
-    
-    .infoProyecto{
+
+    .infoProyecto {
         width: 100%;
         height: 400px;
         padding: 10px;
     }
-    .imgProyecto{
+
+    .imgProyecto {
         height: 400px;
         width: 100%;
         padding-top: 100px;
     }
-    .footer{
+
+    .footer {
         display: inline-block;
         padding: 0px;
     }
-    .redes a i{
+
+    .redes a i {
         color: $color2;
         font-size: 20px;
     }
-    .servicios{
-        background-position: center;
-    background-size: cover;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 200px);
-    padding: 20px;
-    grid-gap: 20px;
-    }
-}
-/* @media only screen and (min-width:600px) and (max-width:1000px) {
-    .galeria {
-        grid-template-columns: repeat(1, 2fr);
-        grid-template-rows: repeat(4, 600px);
-        grid-gap: 20px;
-    }
-    .imagen{
+
+    .servicios {
         background-position: center;
         background-size: cover;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        padding: 20px;
+        grid-gap: 20px;
+        padding-left: 35px;
     }
-    nav{
-        background-color:$color3;
-        .nav-link{
-            color: $color2;
-        }
-        
+    .footer{
+        padding-left: 35px;
     }
-} */
+}
